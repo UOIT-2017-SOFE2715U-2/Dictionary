@@ -1,3 +1,2 @@
-select data structure
-
-Ideas: local files
+read() : check for number of lines
+        check for possible reading from file pass the end of file

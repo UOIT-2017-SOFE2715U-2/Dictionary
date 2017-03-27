@@ -8,23 +8,29 @@ class dictionary:
     __filePath = "../data/"
     __dictionary = {}
 
-    def __init__(self,new_file = False, filePath = "../data/", fileName = "dictionary.csv" ):
+    def __init__(self,filePath = "../data/", fileName = "dictionary.csv" ):
+        self.__fileName = fileName
+        self.__filePath = filePath
         if not os.path.exists(filePath) or\
             not os.path.isfile(filePath + fileName):
             print "Error! file not found"
             exit()
+    '''
         else:
-            self.read(filePath,fileName)
+            self.read(filePath,fileName,0)
             if new_file:
                 self.write()
-
+    '''
 
     # Reading dictionary.csv
-    def read(self, filePath, fileName):
+    def read(self, filePath, fileName, number_of_lines):
         with open(str(filePath) + str(fileName)) as f:
             # skip header line
             f.readline()
+
             for line in f:
+            #for i in xrange(0,number_of_lines):
+             #   line = f.next()
                 (key, val) = line.split(',', 1)
                 key = re.sub(r'^"*|"*$', '', key)
                 val = re.sub(r'^"*|"*\n', '', val)
@@ -32,6 +38,8 @@ class dictionary:
                     self.__dictionary[key] = self.__dictionary[key] + [val]
                 else:
                     self.__dictionary[key] = [val]
+        self.write()
+
 
     # writing to our dictionary
     def write(self, filePath = __filePath, fileName = __fileName):

@@ -4,7 +4,9 @@
 
 from dictionary_class import *
 
-dict = dictionary(True, "../project-exercises/", "dictionary.csv")
-defn = dict.search("aback")
-dict.print_definition("aback")
-
+dict = dictionary()
+dict.read("../project-exercises/", "dictionary.csv",0)
+if dict.search("a"):
+    dict.print_definition("a")
+else:
+    print "word not found"
