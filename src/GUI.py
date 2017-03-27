@@ -6,9 +6,6 @@ class Application(Frame):
 
     __dictionary = dictionary()
 
-    def say_hi(self):
-        print "hi there, everyone!"
-
     def search(self):
         #self.__dictionary.print_definition(self.Word.get())
         result = self.__dictionary.search(self.Word.get())
@@ -72,11 +69,6 @@ class Application(Frame):
 
         self.QUIT.pack({"side": "left"})
 
-        self.hi_there = Button(self)
-        self.hi_there["text"] = "Hello",
-        self.hi_there["command"] = self.say_hi
-
-        self.hi_there.pack({"side": "left"})
         '''
     def __init__(self, master=None):
         Frame.__init__(self, master)
