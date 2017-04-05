@@ -1,0 +1,260 @@
+C:\Users\100568635\AppData\Local\Continuum\Anaconda2\python.exe C:/Users/100568635/Documents/GitHub/SOFE2715U/Dictionary/src/exercises.py
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  100
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.0
+Time to add  100  words:  0.00264444209383
+Time to edit  100  words:  0.0013311099279
+Time to search  100  words:  0.00074933266726
+Time to delete  100  words:  0.00069155494084
+Total time:  0.00541643962983
+##########################
+Success edits :  0
+Fail edits :  100
+Success search :  1
+Fail search :  99
+Success delete :  1
+Fail delete :  99
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  1000
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.00554221729581
+Time to add  1000  words:  0.0481710682924
+Time to edit  1000  words:  0.0124604333685
+Time to search  1000  words:  0.00627777219754
+Time to delete  1000  words:  0.00596621691892
+Total time:  0.0728754907773
+##########################
+Success edits :  4
+Fail edits :  996
+Success search :  4
+Fail search :  996
+Success delete :  4
+Fail delete :  996
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  2500
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.0785368190784
+Time to add  2500  words:  0.256185105613
+Time to edit  2500  words:  0.040886630323
+Time to search  2500  words:  0.026252865553
+Time to delete  2500  words:  0.0268630872328
+Total time:  0.350187688722
+##########################
+Success edits :  34
+Fail edits :  2466
+Success search :  33
+Fail search :  2467
+Success delete :  33
+Fail delete :  2467
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  5000
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.428844507694
+Time to add  5000  words:  0.923538290188
+Time to edit  5000  words:  0.102282131305
+Time to search  5000  words:  0.0733928236508
+Time to delete  5000  words:  0.0769572649269
+Total time:  1.17617051007
+##########################
+Success edits :  141
+Fail edits :  4859
+Success search :  126
+Fail search :  4874
+Success delete :  126
+Fail delete :  4874
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  10000
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  1.60513635099
+Time to add  10000  words:  3.50535643968
+Time to edit  10000  words:  0.255261550879
+Time to search  10000  words:  0.239045120849
+Time to delete  10000  words:  0.236874900556
+Total time:  4.23653801197
+##########################
+Success edits :  545
+Fail edits :  9455
+Success search :  411
+Fail search :  9589
+Success delete :  411
+Fail delete :  9589
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  172146
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  5.84180814061
+Time to add  172146  words:  57.6335558813
+Time to edit  10000  words:  2.73028512864
+Time to search  20000  words:  6.63970520915
+Time to delete  20000  words:  6.32820948604
+Total time:  73.3317557051
+##########################
+Success edits :  10000
+Fail edits :  0
+Success search :  11004
+Fail search :  8996
+Success delete :  11004
+Fail delete :  8996
+
+Process finished with exit code 0
+###########################################################################
+
+C:\Users\100568635\AppData\Local\Continuum\Anaconda2\python.exe C:/Users/100568635/Documents/GitHub/SOFE2715U/Dictionary/src/exercises.py
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  100
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  4.44444049383e-07
+Time to add  100  words:  0.00249466444919
+Time to edit  100  words:  0.00170133182104
+Time to search  100  words:  0.000853332574815
+Time to delete  100  words:  0.000706666038519
+Total time:  0.00575599488356
+##########################
+Success edits :  0
+Fail edits :  100
+Success search :  1
+Fail search :  99
+Success delete :  1
+Fail delete :  99
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  1000
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.00597066135941
+Time to add  1000  words:  0.048572401269
+Time to edit  1000  words:  0.0126333221037
+Time to search  1000  words:  0.00634177214065
+Time to delete  1000  words:  0.00624977222242
+Total time:  0.0737972677358
+##########################
+Success edits :  4
+Fail edits :  996
+Success search :  4
+Fail search :  996
+Success delete :  4
+Fail delete :  996
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  2500
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.0798972623135
+Time to add  2500  words:  0.247452224487
+Time to edit  2500  words:  0.0379910773413
+Time to search  2500  words:  0.0233804236618
+Time to delete  2500  words:  0.0239319787271
+Total time:  0.332755704217
+##########################
+Success edits :  34
+Fail edits :  2466
+Success search :  33
+Fail search :  2467
+Success delete :  33
+Fail delete :  2467
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  5000
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  0.412771633092
+Time to add  5000  words:  0.897644979871
+Time to edit  5000  words:  0.105628350553
+Time to search  5000  words:  0.0731532683082
+Time to delete  5000  words:  0.0828768152206
+Total time:  1.15930341395
+##########################
+Success edits :  141
+Fail edits :  4859
+Success search :  126
+Fail search :  4874
+Success delete :  126
+Fail delete :  4874
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  10000
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  1.57225504688
+Time to add  10000  words:  3.52250753555
+Time to edit  10000  words:  0.250244222005
+Time to search  10000  words:  0.238383343659
+Time to delete  10000  words:  0.245166004297
+Total time:  4.25630110551
+##########################
+Success edits :  545
+Fail edits :  9455
+Success search :  411
+Fail search :  9589
+Success delete :  411
+Fail delete :  9589
+#############################################################################################################
+#############################################################################################################
+Number of dicionary words:  172146
+Reading words and definitions from dictionary.csv
+Edit definitions using definitions.csv
+Search for words using words.txt
+Delete words using words.txt
+##########################
+Start Time:  5.82868415228
+Time to add  172146  words:  57.6018034651
+Time to edit  10000  words:  2.74554600396
+Time to search  20000  words:  6.62768521984
+Time to delete  20000  words:  6.32422060069
+Total time:  73.2992552896
+##########################
+Success edits :  10000
+Fail edits :  0
+Success search :  11004
+Fail search :  8996
+Success delete :  11004
+Fail delete :  8996
+
+Process finished with exit code 0

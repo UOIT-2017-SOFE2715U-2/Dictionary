@@ -42,23 +42,23 @@ class AlphabetHashTable():
 
     def delete_word(self, word):
         key = self.pre_hash(word[0])
-        self.__word_tables[key].delete_word(word)
+        return self.__word_tables[key].delete_word(word)
 
     def add_definition(self, word, definition):
         key = self.pre_hash(word[0])
-        self.__word_tables[key].add_definition(word, definition)
+        return self.__word_tables[key].add_definition(word, definition)
 
     def delete_definition(self, word, number):
         key = self.pre_hash(word[0])
-        self.__word_tables[key].delete_definition(word, number)
+        return self.__word_tables[key].delete_definition(word, number)
 
     def edit_definition(self, word, definition_number, new_definition):
         key = self.pre_hash(word[0])
-        self.__word_tables[key].edit_definition(word, definition_number)
+        return self.__word_tables[key].edit_definition(word, definition_number, new_definition)
 
     def get_word_with_definition(self, word):
         key = self.pre_hash(word[0])
-        return self.__word_tables[key].get_word_with_definition(self,word)
+        return self.__word_tables[key].get_word_with_definition(word)
 
     def print_definitions(self, word):
         key = self.pre_hash(word[0])
@@ -99,45 +99,42 @@ class WordsHashTable():
     def delete_word(self,word):
         key = self.pre_hash(word)
         if self.__cell[key] is None:
-            print "Error: word doesn't exist"
-            return False
+            return False, "Error: word doesn't exist," + word
         else:
-            self.__cell[key].delete_word(word)
+            return self.__cell[key].delete_word(word)
 
     def add_definition(self,word, definition):
         key = self.pre_hash(word)
         if self.__cell[key] is None:
             self.add_word(word)
 
-        self.__cell[key].add_definition(word, definition)
+        return self.__cell[key].add_definition(word, definition)
 
     def delete_definition(self, word, number):
         key = self.pre_hash(word)
         if self.__cell[key] is None:
-            print "Error: word doesn't exist"
+            return False, "Error: word doesn't exist," + word
         else:
-            self.__cell[key].delete_definition(word, number)
+            return self.__cell[key].delete_definition(word, number)
 
     def edit_definition(self, word, number, new_definition):
         key = self.pre_hash(word)
         if self.__cell[key] is None:
-            print "Error: word doesn't exist"
+            return False, "Error: word doesn't exist," + word
         else:
-            self.__cell[key].edit_definition(word, number, new_definition)
+            return self.__cell[key].edit_definition(word, number, new_definition)
 
     def get_word_with_definition(self,word):
         key = self.pre_hash(word)
         if self.__cell[key] is None:
-            print "Error: word doesn't exist"
-            return False
+            return False, "Error: word doesn't exist," + word
         else:
             return self.__cell[key].get_word_with_definitions(word)
 
     def print_definitions(self,word):
         key = self.pre_hash(word)
         if self.__cell[key] is None:
-            print "Error: word doesn't exist"
-            return False
+            print "Error: word doesn't exist,", word
         else:
             self.__cell[key].print_definitions(word)
 

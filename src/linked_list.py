@@ -21,7 +21,7 @@ class Node():
         self.__value_list.append(definition)
 
     def get_word_with_definitions(self):
-        return self.__value_list
+        return True, self.__value_list
 
     def print_definitions(self):
         for i in xrange(1, len(self.__value_list)):
@@ -32,15 +32,17 @@ class Node():
             return False
         else:
             del self.__value_list[number]
+            return True
 
     def edit_definition(self,number, definition):
+        number = int(number)
         if number == 0:
-            return False
+            return False, "Number of definition must be larger that 0"
         elif number >= len(self):
-            print "Error: wrong definition number"
-            return False
+            return False, "Error: wrong definition number"
         else:
             self.__value_list[number] = definition
+            return True, "Definition changed"
 
     def set_next(self,next):
         self.__next = next
@@ -95,13 +97,24 @@ class DoublyLinkedList():
             if w.get_word() == word.lower():
                 prev_node = w.get_prev()
                 next_node = w.get_next()
-                del w
-                prev_node.set_next(next_node)
-                next_node.set_prev(prev_node)
+                #del w
+                # check if only one node existed
+                if self.__head == self.__tail:
+                    self.__head = None
+                    self.__tail = None
+                elif w == self.__tail:
+                    prev_node.set_next(None)
+                    self.__tail = prev_node
+                elif w == self.__head:
+                    next_node.set_prev(None)
+                    self.__head = next_node
+                else:
+                    prev_node.set_next(next_node)
+                    next_node.set_prev(prev_node)
+
                 self.__len -= 1
-                print "Word: " + word + " was deleted from dictionary"
-                return True
-        print "Error: word doesn't exist"
+                return True, "Word: " + word + " was deleted from dictionary"
+        return False, "Error: word doesn't exist," + word
 
     def add_definition(self,word, definition):
         for w in self:
@@ -117,21 +130,20 @@ class DoublyLinkedList():
             if w.get_word() == word.lower():
                 w.remove_definition(number)
                 if len(w) == 1:
-                    self.delete_word(word)
+                    return self.delete_word(word)
 
     def edit_definition(self, word, number, definition):
         for w in self:
             if w.get_word() == word.lower():
-                w.edit_definition(number, definition)
-                return
-        print "Word doesn't exist"
+                return w.edit_definition(number, definition)
+        return False, "Error: word doesn't exist," + word
 
     def get_word_with_definitions(self, word):
         for w in self:
             if w.get_word() == word.lower():
                 return w.get_word_with_definitions()
-        return False
-
+        return False, "Error: word doesn't exist," + word
+    '''
     def remove_last_node(self):
         new_last_node = self.__tail.get_prev()
         if (self.__head == new_last_node):
@@ -141,13 +153,14 @@ class DoublyLinkedList():
             new_last_node.set_next(None)
             self.__tail = new_last_node
         self.__len -= 1
+    '''
 
     def print_definitions(self, word):
         for w in self:
             if w.get_word() == word.lower():
                 w.print_definitions()
-                return True
-        print "Error: word doesn't exist"
+                return
+        print "Error: word doesn't exist,", word
 
     def next(self):
         self.__current_node = self.__current_node.get_next()
